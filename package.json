@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc src/main.ts --outDir dist --target es2020 --module es2020 --lib dom,es2020 --moduleResolution node",
+    "dev": "npm run build && python3 -m http.server 8000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

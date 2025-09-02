@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeePhi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>All We See as Phi</h1>
+            <p class="subtitle">黄金比に見えるもの全て</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <p>画像をドラッグ&ドロップするか、クリックして選択</p>
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <button id="uploadBtn" class="upload-btn">画像を選択</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-section" id="resultSection" style="display: none;">
+            <div class="before-after">
+                <div class="image-container">
+                    <h3>入力画像</h3>
+                    <canvas id="originalCanvas"></canvas>
+                </div>
+                <div class="arrow">→</div>
+                <div class="image-container">
+                    <h3>出力画像</h3>
+                    <canvas id="goldenCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
